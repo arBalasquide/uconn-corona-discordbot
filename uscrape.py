@@ -3,6 +3,7 @@ import os.path
 import filecmp
 from bs4 import BeautifulSoup
 
+# only grabs the text of the article, since other data can be arbitrary
 def get():
     url = 'https://uconn.edu/public-notification/coronavirus/'
     res = requests.get(url)
